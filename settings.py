@@ -3,7 +3,7 @@ lvl_MAP = [
     '          ',
     '          ',
     '          ',
-    'XXXP      ',
+    'XXXP  X   ',
     'XXXXX   XX',
     'XXXXX   XX',
     'XXXXX   XX',
