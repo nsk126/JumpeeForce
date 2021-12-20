@@ -3,7 +3,7 @@ lvl_MAP = [
     '          ',
     '          ',
     '          ',
-    'XXXX      ',
+    'XXXP      ',
     'XXXXX   XX',
     'XXXXX   XX',
     'XXXXX   XX',
@@ -12,5 +12,5 @@ lvl_MAP = [
 
 
 tile_size = 64
-screenWidth = 5 * 64
+screenWidth = 5 * 128
 screenHeight = len(lvl_MAP) * tile_size

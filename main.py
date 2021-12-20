@@ -19,7 +19,7 @@ while True:
             pg.quit()
             sys.exit()
 
-            
+        
     screen.fill('black')
     level.run()
     pg.display.update()
