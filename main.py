@@ -1,26 +1,38 @@
-import pygame as pg
+import pygame
 import sys
-from settings import *
-from tile import Tile
+
+from settings import _screenWidht, _screenHeight, level_map
+from tiles import Tile
 from level import Level
 
-# setup
-pg.init()
-screen = pg.display.set_mode((screenWidth,screenHeight))
-clock = pg.time.Clock()
+# pygame setup function
+pygame.init()
 
-#sprites
-level = Level(lvl_MAP, screen)
+#screenbox
+_screenReso = (_screenWidht,_screenHeight)
 
-# MAIN GAME LOOP
+#create screen and init clock
+screen = pygame.display.set_mode(_screenReso)
+clk = pygame.time.Clock()
+
+#create level
+level = Level(level_map, screen)
+
+#game loop
 while True:
-    for event in pg.event.get():
-        if event.type == pg.QUIT:
-            pg.quit()
+    
+    #event checker
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            pygame.quit()
             sys.exit()
 
-        
+    #filling screen black
     screen.fill('black')
+
+    #run level
     level.run()
-    pg.display.update()
-    clock.tick(60)
+
+    #set pygame nxt update frame and clock tick rate
+    pygame.display.update()
+    clk.tick(60)

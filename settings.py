@@ -1,16 +1,20 @@
-lvl_MAP = [
-    '          ',
-    '          ',
-    '          ',
-    '          ',
-    'XXXP  X   ',
-    'XXXXX   XX',
-    'XXXXX   XX',
-    'XXXXX   XX',
-    'XXXXXXX XX',
+level_map = [
+    '00000000000000000000',
+    '00000000000000000000',
+    '00000000000000000000',
+    '00000000000000110000',
+    '110P0000001100000000',
+    '11110000000011000011',
+    '11110111000000001111',
+    '00000111001111001111',
+    '00000111001111001111',
+    '00000111001111001111',
 ]
 
 
+# DECLARE TILE SIZE
 tile_size = 64
-screenWidth = 5 * 128
-screenHeight = len(lvl_MAP) * tile_size
+
+# DECLARE SCREEN RESOLUTION
+_screenWidht = 1200
+_screenHeight = len(level_map) * tile_size
