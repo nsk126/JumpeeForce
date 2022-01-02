@@ -2,4 +2,4 @@
 
 This game is an experiment to test procedural general of game levels
 
-<img src="https://github.com/nsk126/JumpeeForce/blob/main/MISC/PYG%20GIF.gif" alt="img-early-game" width="550"/>
+<img src="https://github.com/nsk126/JumpeeForce/blob/main/img/PYG%20GIF.gif" alt="img-early-game" width="550"/>
