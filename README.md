@@ -3,3 +3,5 @@
 This game is an experiment to test procedural generation of game levels
 
 <img src="https://github.com/nsk126/JumpeeForce/blob/main/img/PYG%20GIF.gif" alt="img-early-game" width="550"/>
+
+<link href="https://github.com/nsk126/JumpeeForce/blob/main/CHANGELOG.md" rel= "import"/>
