@@ -27,11 +27,15 @@ while True:
             pygame.quit()
             sys.exit()
 
-    #filling screen black
+    #SCREEN FILL WITH BLACK BACKGROUND
     screen.fill('black')
 
-    #run level
+    #RUN LEVEL
     level.run()
+
+    # DEATH EVENT CONDITION 
+    if level.death() == True:
+        level = Level(level_map, screen)
 
     #set pygame nxt update frame and clock tick rate
     pygame.display.update()

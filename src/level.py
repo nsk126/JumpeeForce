@@ -1,7 +1,7 @@
 import pygame
 
 from tiles import Tile
-from settings import tile_size, _screenWidht
+from settings import tile_size, _screenWidht, _screenHeight
 from player import Player
 
 # DECLARE LEVEL CLASS
@@ -92,7 +92,16 @@ class Level:
                 elif player.direction.y < 0:
                     player.rect.top = sprite.rect.bottom
                     player.direction.y = 0
-        
+    
+    # CLASS METHOD FOR DEATH AND RESPAWN
+    def death(self):
+        player = self.player.sprite
+        #print("y = " + str(player.rect.y) + "  x = " + str(player.rect.x))  
+        #print(str(_screenHeight))
+
+        # CONDITIONAL STATEMENT TO CHECK IF PLAYER IS OUT-OF-BOUNDS IN Y-AXIS
+        if player.rect.y > _screenHeight:
+            return True
 
     # CLASS METHOD TO DRAW ALL TILES
     def run(self):

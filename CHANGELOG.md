@@ -7,3 +7,4 @@
 ### Jan8, 2021
 
 - Fixed jump issue(infinity jump bug)
+- Added a death event on entry of out-of-bounds and a following respawn event
